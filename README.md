@@ -1,7 +1,5 @@
 #vue-format package (https://github.com/LeslieYQ/vue-format)
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
-
 ```bash
 apm install vue-format
 ```
@@ -12,9 +10,17 @@ Or Settings/Preferences ➔ Packages ➔ Search for `vue-format`
 
 - [x] Vue, including html, css(not stylus, less, scss) , js (es6)
 
+## Feature
+
+![feature](http://ww3.sinaimg.cn/large/0060lm7Tly1fmyjsc5tujg30hn0lc49o.gif)
+
+- Sort Your Code Area
+- Indent Wrap
+- Newline between Wrap
+
 ## Usage
 
-It will beautify .vue file for html,css and js
+It will beautify `.vue` file for html,css and js
 
 ### Shortcut
 
@@ -28,16 +34,17 @@ For example:
 
 ```coffeescript
 '.editor':
-  'ctrl-alt-b': 'atom-beautify:beautify-editor'
+  'ctrl-alt-v': 'vue-format:format'
+  'alt-l': 'vue-format:format'
 ```
 
 ## Configuration
 
-use js-beautify default
+*Formated Engine: js-beautify*
 
-### Simple
+Some Options in `Setting`
 
-See [examples/simple-jsbeautifyrc/.jsbeautifyrc](https://github.com/donaldpipowitch/atom-beautify/blob/master/examples/simple-jsbeautifyrc/.jsbeautifyrc).
+Default options:
 
 ```json
 {
@@ -52,7 +59,9 @@ See [examples/simple-jsbeautifyrc/.jsbeautifyrc](https://github.com/donaldpipowi
   "indent_handlebars": true
 }
 ```
+See [examples/simple-jsbeautifyrc/.jsbeautifyrc](https://github.com/donaldpipowitch/atom-beautify/blob/master/examples/simple-jsbeautifyrc/.jsbeautifyrc).
 
 ## License
 
 [MIT](https://github.com/LeslieYQ/vue-format/LICENSE.md) © [LeslieYQ yuqiu](https://github.com/LeslieYQ)
+[Voodeng](https://github.com/voodeng)
